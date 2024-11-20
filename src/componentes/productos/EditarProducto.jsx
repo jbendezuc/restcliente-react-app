@@ -106,7 +106,7 @@ export const EditarProducto = () => {
 
                 <div className='campo'>
                     <label >Imagen: </label> {/**Los if son ternarios */}
-                    {producto.imagen ? (<img src={`${process.env.REACT_APP_BACKEND_URL}/${producto.imagen}`} alt="imagen" width={300} />) : null}
+                    {producto.imagen ? (<img src={`${import.meta.env.VITE_APP_BACKEND_URL}/${producto.imagen}`} alt="imagen" width={300} />) : null}
                     <input type="file" name="imagen" onChange={leerArchivo}/>
                 </div>
 

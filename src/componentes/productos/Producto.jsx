@@ -7,7 +7,7 @@ export const Producto = ({_id,nombre,precio,imagen,eliminarProducto}) => {
                     <div className="info-producto">
                         <p className="nombre">{nombre}</p>
                         <p className="precio">$ {precio}</p>
-                        {imagen ? (<img src={`${process.env.REACT_APP_BACKEND_URL}/${imagen}`}  />) : null}
+                        {imagen ? (<img src={`${import.meta.env.VITE_APP_BACKEND_URL}/${imagen}`}  />) : null}
                     </div>
                     <div className="acciones">
                         <Link to={`/productos/editar/${_id}`} className="btn btn-azul">
